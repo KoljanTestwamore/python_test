@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<head>
+    <title>
+        MY FUCKING BLOG
+    </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <div class="content">
+        {% if latest_post_list %}
+            <div class="list">
+            {% for post in latest_post_list %}
+                <div class="element"><a href="/blog/{{ post.id }}/">{{ post.title }}</a></div>
+            {% endfor %}
+            </div>
+        {% else %}
+            <p>No posts</p>
+        {% endif %}
+        <a href="/blog/create" class="create">
+            Create
+        </a>
+    </div>
+</body>

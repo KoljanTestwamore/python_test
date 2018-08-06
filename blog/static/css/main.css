@@ -1,0 +1,22 @@
+body {
+	font-family: Arial;
+	font-size: 3rem;
+}
+
+.content {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.element {
+	padding-top: 1rem;
+	border: 1rem;
+}	
+
+.create {
+	padding-top: 3rem;
+	font-size: 4rem;
+	color: yellow;
+}

@@ -1,0 +1,14 @@
+body {
+	background-color: red;
+	color: green;
+}
+
+.list {
+	background-color: red;
+	display: flex;
+	justify-content: column;
+}
+
+.element {
+
+}	
